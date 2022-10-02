@@ -1,0 +1,124 @@
+section {
+  background-color: #020272;
+  height: 350px;
+  color: #fff;
+  .footer_container {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    .links ul li {
+      list-style: none;
+      color: white;
+      font-family: sans-serif;
+      margin-top: 10px;
+      width: 90%;
+    }
+    .links {
+      h4 {
+        font-size: 20px;
+        color: white;
+        font-family: sans-serif;
+        margin: 0;
+        margin-top: 20px;
+      }
+    }
+    .links:nth-child(2) {
+      margin-bottom: 60px;
+      svg:first-of-type {
+        display: none;
+      }
+    }
+    .links:first-of-type {
+      margin-right: 50px;
+      svg:last-of-type {
+        display: none;
+      }
+    }
+    .links:last-of-type {
+      margin-left: 60px;
+    }
+    .links {
+      button {
+        background-color: rgb(47, 197, 206);
+        border-radius: 30px;
+        color: white;
+        margin-right: 8px;
+        font-size: 18px;
+        border: none;
+        width: 40px;
+        height: 40px;
+      }
+
+      span {
+        color: #fff;
+      }
+    }
+    .links:nth-child(3) {
+      button {
+        visibility: hidden;
+      }
+    }
+  }
+  .copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    margin-right: 40.5%;
+    span {
+      color: white;
+    }
+  }
+  .contact_info {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer_btn {
+    text-align: center;
+    margin-top: 25px;
+    button {
+        cursor: pointer;
+        background-color: rgb(0, 110, 255);
+        color: #fff;
+        border: none;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        outline: none;
+        font-size: 16px;
+        width: 350px;
+        height: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  section .footer_container .links:nth-child(2) {
+    margin-bottom: 64px;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  section {
+    height: auto;
+    .footer_container {
+      flex-direction: column;
+      .links:nth-child(2) {
+        margin-bottom: 0;
+      }
+      .links:first-of-type {
+        margin-right: 0;
+      }
+      .links:last-of-type {
+        margin-left: 30px;
+        margin-bottom: 20px;
+      }
+    }
+    .copyright {
+      margin: 0 !important;
+      justify-content: center;
+    }
+  }
+}

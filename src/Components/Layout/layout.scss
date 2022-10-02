@@ -1,0 +1,153 @@
+.layout {
+  position: relative;
+  height: 450px;
+  border-radius: 92% 8% 85% 15% / 12% 81% 19% 88%;
+  background: -webkit-linear-gradient(
+    top left,
+    rgba(61, 77, 224, 1),
+    rgba(45, 156, 160, 1)
+  );
+  background: -moz-linear-gradient(
+    top left,
+    rgba(61, 77, 224, 1),
+    rgba(45, 156, 160, 1)
+  );
+  background: linear-gradient(
+    to bottom right,
+    rgba(61, 77, 224, 1),
+    rgba(45, 156, 160, 1)
+  );
+  h2 {
+    color: white;
+    position: absolute;
+    padding-top: 35px;
+    margin-left: 50px;
+    width: 28%;
+  }
+  .input_layout {
+    position: relative;
+    form {
+      display: flex;
+      position: absolute;
+      top: 123px;
+      justify-content: space-between;
+      margin-left: 30px;
+      margin-right: 30px;
+      margin-top: 50px;
+      width: 100%;
+      .search_input {
+        input {
+          box-sizing: border-box;
+          border: none;
+          margin-left: 30px;
+          padding: 15px;
+          width: 450px;
+
+          &:focus {
+            outline: 2px solid blue;
+          }
+        }
+        label {
+          color: rgb(0, 4, 110);
+          position: absolute;
+          margin-left: 15px;
+          top: 13px;
+          left: 33px;
+        }
+      }
+      .location_input {
+        position: relative;
+        input {
+          box-sizing: border-box;
+          border: none;
+          padding: 15px;
+          width: 450px;
+          &:focus {
+            outline: 2px solid blue;
+          }
+        }
+        label {
+          color: rgb(0, 4, 110);
+          position: absolute;
+          margin-left: 15px;
+          top: 13px;
+          left: 0px;
+        }
+      }
+      .submit_button {
+        margin-right: 70px;
+        button {
+          cursor: pointer;
+          color: white;
+          background-color: purple;
+          border-radius: 20px;
+          border: none;
+          font-weight: 700;
+          padding: 12px 25px;
+        }
+      }
+    }
+  }
+
+  .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    padding-top: 25%;
+
+    button {
+      background-color: transparent;
+      border-radius: 30px;
+      border: 2px solid white;
+      color: white;
+      cursor: pointer;
+      text-transform: uppercase;
+      padding: 10px 50px;
+      margin-right: 52px !important;
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .layout .input_layout form .location_input input {
+    width: 300px;
+  }
+  .layout .input_layout form .search_input input {
+    width: 300px;
+  }
+  .layout {
+    .buttons {
+      padding-top: 33%;
+
+      button {
+        padding: 10px 15px !important;
+        margin-right: 20px !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .layout {
+    .input_layout form {
+      margin-left: 10px;
+      .submit_button {
+        margin-right: 37px;
+      }
+    }
+  }
+  .layout .input_layout form .location_input input {
+    width: 150px;
+  }
+  .layout .input_layout form .search_input input {
+    width: 150px;
+  }
+  .layout {
+    .buttons {
+      flex-direction: column;
+      padding-top: 47% !important;
+    }
+  }
+}
