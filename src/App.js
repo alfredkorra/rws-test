@@ -5,13 +5,13 @@ import quots from "../src/assets/quots.png";
 import footerimg from "../src/assets/footerimg.png";
 import Footer from "./Components/Footer/Footer";
 import "./App.scss";
-
+import "./index.scss"
 function App() {
   return (
     <div className="App">
       <Header />
       <Layout />
-      <div className="cotntainer">
+      <div className="container">
         <div className="header_slider">
           <img src={quots} alt="" />
           <div className="desc">
