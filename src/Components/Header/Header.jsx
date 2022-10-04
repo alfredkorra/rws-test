@@ -5,7 +5,6 @@ const Header = () => {
   return (
     <div className="header_nav">
       <img src={replyLogo} />
-
       <div className="nav_items">
         <ul>
           <li>

@@ -84,7 +84,7 @@
     align-items: center;
     justify-content: center;
     margin-left: 50px;
-    padding-top: 32%;
+    padding-top: 35%;
 
     button {
       background-color: transparent;
@@ -114,6 +114,7 @@
       button {
         padding: 10px 15px !important;
         margin-right: 20px !important;
+        margin-top: 12px;
       }
     }
   }
@@ -138,7 +139,7 @@
   .layout {
     .buttons {
       flex-direction: column;
-      padding-top: 60% !important;
+      padding-top: 70% !important;
     }
   }
 }
